@@ -193,6 +193,9 @@ _________ Configure and Install Grub __________
 --> Enable network manager
 # systemctl enable NetworkManager
 
+--> Enable ssd trim weekly
+# sudo systemctl enable fstrim.timer
+
 --> Change hostname
 # echo "nerdhut" >> /etc/hostname
 
