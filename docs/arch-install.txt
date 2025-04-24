@@ -197,7 +197,7 @@ _________ Configure and Install Grub __________
 # sudo systemctl enable fstrim.timer
 
 --> Change hostname
-# echo "nerdhut" >> /etc/hostname
+# echo "bigbox" >> /etc/hostname
 
 --> Set the time zone
 # ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
