@@ -74,7 +74,7 @@ ln -svf ~/arch-dots/confs/neofetch ~/.config
 # Themes and icons:
 sudo pacman -S lxappearance-gtk3 papirus-icon-theme
 mkdir ~/.themes
-tar -xf ~/arch-dots/themes/WhiteSur-Dark.tar.xz -C ~/.themes 
+tar -xf ~/arch-dots/themes/WhiteSur-Dark.tar.xz -C ~/.themes/
 
 # Open lxappearance and change fonts, themes according to you 
 
