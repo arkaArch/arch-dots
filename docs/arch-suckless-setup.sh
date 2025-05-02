@@ -67,7 +67,7 @@ ln -svf ~/arch-dots/confs/dunst ~/.config
 
 
 # Cli tools, firmware-updaters, transmission:
-sudo pacman -S pacman-contrib tree git neofetch fwupd transmission-cli
+sudo pacman -S pacman-contrib rsync tree git neofetch fwupd transmission-cli
 ln -svf ~/arch-dots/confs/neofetch ~/.config
 
 
