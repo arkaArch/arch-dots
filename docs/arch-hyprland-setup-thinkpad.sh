@@ -15,16 +15,38 @@ sudo pacman -S ttf-firacode-nerd
 
 # Terminal:
 sudo pacman -S kitty
+ln -svf ~/arch-dots/hyprconfs/kitty/ ~/.config/
+
 
 # Install hypr ecosystems:
 sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprpolkitagent
+ln -svf ~/arch-dots/hyprconfs/hypr/ ~/.config/
+
 
 # Sound and brightness:
-sudo pacman -S brightnessctl
+sudo pacman -S pipewire wireplumber sof-firmware pipewire-audio pipewire-pulse brightnessctl
+
+
+# File manager:
+sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick unzip unrar wl-clipboard
+ln -sv ~/arch-dots/hyprconfs/yazi/ ~/.config/
+
 
 # Browser:
 sudo pacman -S firefox  # Extension: ublock-origin
 
 
+# Z-Shell with color prompt:
+sudo pacman -S exa
+sudo pacman -S zsh zsh-{completions,syntax-highlighting,autosuggestions}
+chsh -s $(which zsh)
+rm -r ~/.bash*
+ln -svf ~/arch-dots/hyprconfs/zsh/.zshrc ~/.zshrc
+
+
 # Cli tools, firmware-updaters:
-sudo pacman -S pacman-contrib tree git fwupd 
+sudo pacman -S pacman-contrib tree git openssh fwupd
+
+
+# Link neovim setup:
+ln -svf ~/arch-dots/nvim ~/.config

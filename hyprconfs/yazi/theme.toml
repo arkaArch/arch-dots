@@ -1,0 +1,5 @@
+[icon]
+prepend_dirs = [
+    { name = "arch-dots", text = "", fg="#d3869b" },
+    { name = "Programming", text = "", fg="#fb4934" },
+]
