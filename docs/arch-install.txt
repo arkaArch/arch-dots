@@ -194,10 +194,10 @@ _________ Configure and Install Grub __________
 # systemctl enable NetworkManager
 
 --> Enable ssd trim weekly
-# sudo systemctl enable fstrim.timer
+# systemctl enable fstrim.timer
 
 --> Change hostname
-# echo "bigbox" >> /etc/hostname
+# echo "nerdhut" >> /etc/hostname
 
 --> Set the time zone
 # ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
