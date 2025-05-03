@@ -55,7 +55,7 @@ systemctl --user start mpd
 # Z-Shell with color prompt:
 sudo pacman -S exa
 sudo pacman -S zsh zsh-{completions,syntax-highlighting,autosuggestions}
-chsh -s $(which zsh)/arch-dots/confs
+chsh -s $(which zsh)
 rm -r ~/.bash*
 ln -svf ~/arch-dots/confs/zsh/.zshrc ~/.zshrc
 
