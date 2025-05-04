@@ -19,9 +19,10 @@ ln -svf ~/arch-dots/hyprconfs/kitty/ ~/.config/
 
 
 # Install hypr ecosystems:
-sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprpolkitagent
+sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprpolkitagent waybar wofi
 ln -svf ~/arch-dots/hyprconfs/hypr/ ~/.config/
-
+ln -svf ~/arch-dots/hyprconfs/waybar/ ~/.config/
+ln -svf ~/arch-dots/hyprconfs/wofi/ ~/.config/
 
 # Sound and brightness:
 sudo pacman -S pipewire wireplumber sof-firmware pipewire-audio pipewire-pulse brightnessctl
