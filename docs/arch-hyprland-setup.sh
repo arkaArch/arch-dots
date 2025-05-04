@@ -33,6 +33,9 @@ sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick unz
 ln -sv ~/arch-dots/hyprconfs/yazi/ ~/.config/
 
 
+# Notification:
+sudo pacman -S libnotify mako
+
 # Browser:
 sudo pacman -S firefox  # Extension: ublock-origin
 
