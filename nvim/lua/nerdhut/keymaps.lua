@@ -42,3 +42,23 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+
+-- Open terminal in neovim
+-- Set keymaps and behaviour of terminal
+vim.api.nvim_create_autocmd('TermOpen', {
+    group = vim.api.nvim_create_augroup('open-terminal', { clear = true }),
+    callback = function()
+        vim.opt.number = false
+        vim.opt.relativenumber = false
+    end,
+})
+
+vim.keymap.set("n", "<leader>ot", function()
+    vim.cmd.vnew()
+    vim.cmd.term()
+    vim.api.nvim_win_set_width(0, 70)
+end)
+
+-- Exit from terminal mode
+vim.keymap.set("t", "<leader>ct", "<Esc><C-\\><C-n>")

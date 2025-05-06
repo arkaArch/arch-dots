@@ -1,0 +1,17 @@
+height=150
+width=250
+anchor=top-right
+
+font=FiraCode Nerd Font 11
+background-color=#2d353b
+text-color=#d3c6aa
+
+border-color=#a7c080
+border-size=2
+border-radius=12
+padding=12
+
+icon-location=left
+
+text-alignment=center
+default-timeout=5000

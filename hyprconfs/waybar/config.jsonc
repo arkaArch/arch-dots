@@ -43,9 +43,12 @@
         }
     },
 
+    "hyprland/window": {
+        "max-length": 60
+    },
 
     "clock": {
-        "format": "{:%H:%M %p}",
+        "format": "{:%H:%M%p - %d %B %Y}",
         "format-alt": "{:%Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },

@@ -35,6 +35,7 @@ ln -sv ~/arch-dots/hyprconfs/yazi/ ~/.config/
 
 # Notification:
 sudo pacman -S libnotify mako
+ln -svf ~/arch-dots/hyprconfs/mako ~/.config/
 
 # Browser:
 sudo pacman -S firefox  # Extension: ublock-origin
