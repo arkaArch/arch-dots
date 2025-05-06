@@ -34,8 +34,6 @@ ln -svf ~/arch-dots/confs/fontconfig ~/.config
 sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick \
 	xclip ueberzugpp udisks2 unzip unrar
 ln -svf ~/arch-dots/confs/yazi ~/.config/
-# Install yazi packages:
-ya pack -a yazi-rs/plugins:mount
 # Thunar
 sudo pacman -S thunar catfish gvfs tumbler thunar-volman thunar-archive-plugin \
     thunar-media-tags-plugin file-roller poppler-glib gvfs-mtp ffmpegthumbnailer

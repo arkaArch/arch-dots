@@ -15,27 +15,27 @@ sudo pacman -S ttf-firacode-nerd
 
 # Terminal:
 sudo pacman -S kitty
-ln -svf ~/arch-dots/hyprconfs/kitty/ ~/.config/
+ln -svf ~/arch-dots/confs/kitty/ ~/.config/
 
 
 # Install hypr ecosystems:
 sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprpolkitagent waybar wofi
-ln -svf ~/arch-dots/hyprconfs/hypr/ ~/.config/
-ln -svf ~/arch-dots/hyprconfs/waybar/ ~/.config/
-ln -svf ~/arch-dots/hyprconfs/wofi/ ~/.config/
+ln -svf ~/arch-dots/confs/hypr/ ~/.config/
+ln -svf ~/arch-dots/confs/waybar/ ~/.config/
+ln -svf ~/arch-dots/confs/wofi/ ~/.config/
 
 # Sound and brightness:
 sudo pacman -S pipewire wireplumber sof-firmware pipewire-audio pipewire-pulse brightnessctl
 
 
 # File manager:
-sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick unzip unrar wl-clipboard
-ln -sv ~/arch-dots/hyprconfs/yazi/ ~/.config/
+sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick unzip unrar wl-clipboard udisks2
+ln -svf ~/arch-dots/confs/yazi/ ~/.config/
 
 
 # Notification:
 sudo pacman -S libnotify mako
-ln -svf ~/arch-dots/hyprconfs/mako ~/.config/
+ln -svf ~/arch-dots/confs/mako ~/.config/
 
 # Browser:
 sudo pacman -S firefox  # Extension: ublock-origin
@@ -46,7 +46,7 @@ sudo pacman -S exa
 sudo pacman -S zsh zsh-{completions,syntax-highlighting,autosuggestions}
 chsh -s $(which zsh)
 rm -r ~/.bash*
-ln -svf ~/arch-dots/hyprconfs/zsh/.zshrc ~/.zshrc
+ln -svf ~/arch-dots/confs/zsh/.zshrc ~/.zshrc
 
 
 # Cli tools, firmware-updaters:

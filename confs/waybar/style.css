@@ -35,3 +35,8 @@ window#waybar {
 #battery {
     padding: 0 8px;
 }
+
+#pulseaudio.muted,
+#temperature.critical {
+    color: #e67e80;
+}
